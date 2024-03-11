@@ -11,8 +11,8 @@ mongoose.connect(process.env.MONGO_URI);
 
 
 mongoose.connection.on("connected", () => {
-  console.log("Mongoose connected");
-  app.listen(process.env.PORT, () => console.log("Serc started 3000"));
+  
+  app.listen(process.env.PORT);
 });
 
 mongoose.connection.on("error", (error) => {
